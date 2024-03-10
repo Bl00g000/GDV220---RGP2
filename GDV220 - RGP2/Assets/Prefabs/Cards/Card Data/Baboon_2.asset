@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e35bba7272b38544bc50c2510a7cb5e, type: 3}
+  m_Name: Baboon_2
+  m_EditorClassIdentifier: 
+  cardName: Baboon 2
+  cardDescription: 'On Play: Summons infront of this card gains +1 attack'
+  rarity: 0
+  sprite: {fileID: 21300000, guid: b178e3f3eaaaede4488e7e03fc84a450, type: 3}
+  health: 5
+  damage: 3
+  cost: 2
+  attack: {fileID: 1447202746682835531, guid: d5e9255f9162b9b4eb07080a1a8ead54, type: 3}
