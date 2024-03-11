@@ -165,7 +165,7 @@ Transform:
   - {fileID: 1640365876}
   - {fileID: 789130072}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &184779275
 PrefabInstance:
@@ -451,10 +451,16 @@ PrefabInstance:
       propertyPath: assignedLane
       value: 
       objectReference: {fileID: 641750632}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: prefab_EnemyCardVisuals
+      value: 
+      objectReference: {fileID: 5863628981521265007, guid: fc451cc561dedfe4098a6ae2db6a98fd,
+        type: 3}
     - target: {fileID: 4446081064388592585, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4446081064388592585, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
@@ -546,6 +552,12 @@ PrefabInstance:
       propertyPath: assignedLane
       value: 
       objectReference: {fileID: 387969124}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: prefab_EnemyCardVisuals
+      value: 
+      objectReference: {fileID: 5863628981521265007, guid: fc451cc561dedfe4098a6ae2db6a98fd,
+        type: 3}
     - target: {fileID: 4446081064388592585, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
       propertyPath: m_RootOrder
@@ -653,6 +665,12 @@ PrefabInstance:
       propertyPath: assignedLane
       value: 
       objectReference: {fileID: 1631811119}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: prefab_EnemyCardVisuals
+      value: 
+      objectReference: {fileID: 5863628981521265007, guid: fc451cc561dedfe4098a6ae2db6a98fd,
+        type: 3}
     - target: {fileID: 4446081064388592585, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
       propertyPath: m_RootOrder
@@ -2475,7 +2493,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0

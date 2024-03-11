@@ -463,7 +463,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -643,13 +642,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: e60d165e36335fe479249c0c2644e2bb, type: 2}
   cardVisualsObject: {fileID: 7755918460457720842}
-  cardSummonSprite: {fileID: 5119075637219291909}
+  cardSummonObj: {fileID: 0}
   txtName: {fileID: 4479147551847088281}
   txtHealth: {fileID: 5119075639119964529}
   txtDamage: {fileID: 6345928732243289974}
   txtCost: {fileID: 5409699310707463044}
   sprCardArt: {fileID: 5119075637219291911}
+  bMarkedForDeath: 0
+  iStartHealth: 0
   iHealth: 0
+  iDamage: 0
+  iLanePosIndex: 0
 --- !u!1 &5119075638082715638
 GameObject:
   m_ObjectHideFlags: 0

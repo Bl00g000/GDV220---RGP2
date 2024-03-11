@@ -103,7 +103,7 @@ public class CardBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
         sprCardArt.sprite = card.sprite;
 
         cardSummonObj.GetComponent<SpriteRenderer>().sprite = sprCardArt.sprite;
-        cardSummonObj.SetActive(false);
+        //cardSummonObj.SetActive(false);
     }
 
     public void TakeDamage(int _damageAmount)

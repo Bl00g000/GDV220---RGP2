@@ -30,7 +30,7 @@ public class Battlefield : MonoBehaviour
     [HideInInspector] public List<Lane> allyLanes = new List<Lane>();
     [HideInInspector] public List<Lane> enemyLanes = new List<Lane>();
 
-    public event Action<int> onSummonInLane;
+    public event Action<int, bool> onSummonInLane;
 
     //STATIC/SINGLETON THING 
     private void Awake()
@@ -123,7 +123,7 @@ public class Battlefield : MonoBehaviour
     public void SummonInLane(int _iLaneIndex)
     {
         Debug.Log("Battlefield summoning on lane " + _iLaneIndex);
-        onSummonInLane?.Invoke(_iLaneIndex);
+        onSummonInLane?.Invoke(_iLaneIndex, false);
     }
 
     public void CommenceBattle()

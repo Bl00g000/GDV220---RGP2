@@ -134,7 +134,7 @@ public class CardManager : MonoBehaviour
         Destroy(card.gameObject);
     }
 
-    public void SummonCard(int _iLaneIndex)
+    public void SummonCard(int _iLaneIndex, bool _isEnemySummon = false)
     {
         // Player lanes are index 1-3
         //if (_iLaneIndex > 3) return;
@@ -151,13 +151,15 @@ public class CardManager : MonoBehaviour
             onField.Add(cardToSummon);
         }
         
-
-        // Disable all children to make card invisible
-        foreach (Transform child in cardToSummon.transform)
+        if (!_isEnemySummon)
         {
-            child.gameObject.SetActive(false);
+            // Disable all children to make card invisible
+            foreach (Transform child in cardToSummon.transform)
+            {
+                child.gameObject.SetActive(false);
+            }
         }
-
+        
         Debug.Log("Summoning " + cardToSummon.name + " on Lane " + _iLaneIndex);
 
         // Set summon obj as child of selected lane

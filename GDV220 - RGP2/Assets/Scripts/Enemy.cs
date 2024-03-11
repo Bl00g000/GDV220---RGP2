@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     //public Sprite _enemySprite;
     public GameObject objEnemyImage;
+    public GameObject prefab_EnemyCardVisuals;
 
     public string sEnemyName = "Pizza Guy";   //Default name
 
@@ -204,13 +205,13 @@ public class Enemy : MonoBehaviour
     private void PlayChosenCard()
     {
         //Instantiate card
-        var newCard = Instantiate(CardManager.instance.pf_baseCard, CardManager.instance.gameObject.transform);                                     ////PROBLEM IN HERE!!!
+        var newCard = Instantiate(prefab_EnemyCardVisuals, CardManager.instance.gameObject.transform);                                     ////PROBLEM IN HERE!!!
         newCard.GetComponent<CardBase>().card = cardDataToPlay;
         newCard.GetComponent<CardBase>().InitializeCardData();
        
 
         CardManager.instance.cardToSummon = newCard.GetComponent<CardBase>();
-        CardManager.instance.SummonCard(assignedLane.iLaneIndex);
+        CardManager.instance.SummonCard(assignedLane.iLaneIndex, true);
         
 
         assignedLane.SetSummonsLaneIndex();

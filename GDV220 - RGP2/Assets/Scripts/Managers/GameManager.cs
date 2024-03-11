@@ -176,7 +176,7 @@ public class GameManager : MonoBehaviour
                 // Teddy playing with the card manager scale
                     // To try make it smaller during combat rather than disappearing
                     // But pivot/anchor is in the middle :')
-                CardManager.instance.transform.localScale = new Vector3(1,1,1);
+                //CardManager.instance.transform.localScale = new Vector3(1,1,1);
                 //CardManager.instance.gameObject.SetActive(true);
 
                 Player.instance.StartTurn();
@@ -192,7 +192,7 @@ public class GameManager : MonoBehaviour
                 // Disable clicking / activating cards
                 // done; if-check in card base - teddy
 
-                CardManager.instance.transform.localScale *= 0.5f;
+                //CardManager.instance.transform.localScale *= 0.5f;
                 //CardManager.instance.gameObject.SetActive(false);
 
                 // Play battle

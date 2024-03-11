@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
     }
 
     // Pay the cost of card and update UI
-    void CardSummoned(int _iLaneIndex)
+    void CardSummoned(int _iLaneIndex, bool _isEnemySummon)
     {
         // Stops player from paying cost of enemy cards
         // Player lanes are index 1-3
