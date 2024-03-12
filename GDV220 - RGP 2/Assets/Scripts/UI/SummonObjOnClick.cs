@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class SummonObjOnClick : MonoBehaviour
 {
     private CardBase cardBase;
+    private Collider boxCollider;
 
     private void Start()
     {
