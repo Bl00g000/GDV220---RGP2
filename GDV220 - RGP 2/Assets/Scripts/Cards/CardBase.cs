@@ -55,7 +55,6 @@ public class CardBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
             // if not in prep phase or not enough souls
             if (GameManager.instance.bTurnFinished || Player.instance.iSouls < card.cost)
             {
-                CardManager.instance.cardToSummon = null;
                 return;
             }
 

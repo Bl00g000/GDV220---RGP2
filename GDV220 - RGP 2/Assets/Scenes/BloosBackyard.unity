@@ -936,6 +936,41 @@ PrefabInstance:
       propertyPath: assignedLane
       value: 
       objectReference: {fileID: 641750632}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 61bf4aec61bdbee42b3c774b87def2dc,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 708774886b681424e9db8fdbc5d23453,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4071bd98eabdabf4f8693b06d42f6e0e,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: a9dd2883952ae1344906fcd0a3b0794c,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbe57c19359ea024cabef9c75e8552a3,
+        type: 2}
     - target: {fileID: 4446081064388592585, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
       propertyPath: m_RootOrder
@@ -1251,6 +1286,41 @@ PrefabInstance:
       propertyPath: assignedLane
       value: 
       objectReference: {fileID: 387969124}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 80a6f7e991251fb4cbf1944de516689a,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: a21299048c1c2744f9d87605304fb266,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 61bf4aec61bdbee42b3c774b87def2dc,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8bc343b30353c284e8c5d422b8366ebc,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a85198fa3bab64469e3f479d9c7bb6f,
+        type: 2}
     - target: {fileID: 4446081064388592585, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
       propertyPath: m_RootOrder
@@ -1487,6 +1557,41 @@ PrefabInstance:
       propertyPath: assignedLane
       value: 
       objectReference: {fileID: 1631811119}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 708774886b681424e9db8fdbc5d23453,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 80a6f7e991251fb4cbf1944de516689a,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7813f1c8380856242a26b8ff12fb6aab,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 53c20659815191943b34e72cdf8fc0e1,
+        type: 2}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
+      propertyPath: enemyDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 25291bd79fb58fe40a2c9103760a0a44,
+        type: 2}
     - target: {fileID: 4446081064388592585, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
       propertyPath: m_RootOrder
