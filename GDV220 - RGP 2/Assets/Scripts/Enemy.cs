@@ -54,6 +54,8 @@ public class Enemy : MonoBehaviour
     //Hides the enemy sprite and canvases
     private void HideEnemy()
     {
+
+
         assignedLane.bActiveLane = false;
         assignedLane.HideLanePlane();
         Battlefield.instance.allLanes[assignedLane.iLaneIndex - 4].bActiveLane = false;
@@ -275,7 +277,7 @@ public class Enemy : MonoBehaviour
     {
         SpriteRenderer SR = GetComponentInChildren<SpriteRenderer>();
         SR.color = Color.red;
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.65f);
 
         SR.color = Color.white;
     }

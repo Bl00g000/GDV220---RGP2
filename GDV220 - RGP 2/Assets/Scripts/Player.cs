@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(int _iDamage)
     {
         iCurrentHealth -= _iDamage;
+        StartCoroutine(DamageEffect());
         if (iCurrentHealth <= 0) iCurrentHealth = 0;
         UpdateStatsUI();
     }
@@ -73,5 +74,14 @@ public class Player : MonoBehaviour
     {
         healthUI.text = iCurrentHealth.ToString();
         soulsUI.text = iSouls.ToString();
+    }
+
+    IEnumerator DamageEffect()
+    {
+        SpriteRenderer SR = GetComponentInChildren<SpriteRenderer>();
+        SR.color = Color.red;
+        yield return new WaitForSeconds(0.65f);
+
+        SR.color = Color.white;
     }
 }
