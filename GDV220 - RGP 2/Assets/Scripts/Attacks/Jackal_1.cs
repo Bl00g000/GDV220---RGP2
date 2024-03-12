@@ -52,9 +52,12 @@ public class Jackal_1 : Attack
 
                         if (_targetLanes[i] != null)
                         {
-                            if (_targetLanes[i].summons[j] != null)
+                            if (_targetLanes[i] != null)
                             {
-                                randomTarget.Add(_targetLanes[i].summons[j]);
+                                if (_targetLanes[i].summons[j] != null)
+                                {
+                                    randomTarget.Add(_targetLanes[i].summons[j]);
+                                }
                             }
                         }
                     }
