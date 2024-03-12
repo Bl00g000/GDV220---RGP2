@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7503148032050929982}
   - component: {fileID: 3127455411774226737}
+  - component: {fileID: -4381389865481679786}
+  - component: {fileID: 1370930030363629684}
   m_Layer: 0
   m_Name: Baboon_1
   m_TagString: Untagged
@@ -44,3 +46,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a82428963583314d94b061366a3cad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &-4381389865481679786
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974915828990098861}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &1370930030363629684
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974915828990098861}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -17,6 +17,7 @@ MonoBehaviour:
   cardEffect: 0
   rarity: 0
   sprite: {fileID: 24315552, guid: 7b60681b1a4138d46a5e9548561ea0a3, type: 3}
+  animController: {fileID: 9100000, guid: 77d627d02515870478fe04f85083b175, type: 2}
   health: 1
   damage: 1
   cost: 0
