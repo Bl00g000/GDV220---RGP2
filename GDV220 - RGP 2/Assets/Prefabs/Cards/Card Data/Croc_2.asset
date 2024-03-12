@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e35bba7272b38544bc50c2510a7cb5e, type: 3}
+  m_Name: Croc_2
+  m_EditorClassIdentifier: 
+  cardName: Croc Dark
+  cardDescription: All friendly front line summons gain +2 attack
+  cardEffect: 1
+  rarity: 0
+  sprite: {fileID: -886966631, guid: 884182abce15074418ce96babb80ea36, type: 3}
+  health: 2
+  damage: 4
+  cost: 2
+  attack: {fileID: 7596747988673921769, guid: a5cffc487e484004e86291d09557a288, type: 3}

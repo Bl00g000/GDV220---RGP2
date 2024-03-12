@@ -1,0 +1,4 @@
+repository "GDV220 - RGP 2@WildGayWestUVCS@cloud"
+  path "/"
+    br "/main"
+    co "/main"

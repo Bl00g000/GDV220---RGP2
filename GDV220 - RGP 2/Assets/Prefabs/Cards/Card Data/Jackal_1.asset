@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e35bba7272b38544bc50c2510a7cb5e, type: 3}
+  m_Name: Jackal_1
+  m_EditorClassIdentifier: 
+  cardName: Jackal Light
+  cardDescription: Deal 1-3 damage to a random summon in any lane
+  cardEffect: 1
+  rarity: 0
+  sprite: {fileID: -971173559, guid: 69ae8591bc30c3b41955181c3cca5040, type: 3}
+  health: 2
+  damage: 1
+  cost: 0
+  attack: {fileID: -3018874824757905263, guid: f10819dd2d79c074e8dec7ade89b5cf2, type: 3}

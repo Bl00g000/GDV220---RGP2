@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e35bba7272b38544bc50c2510a7cb5e, type: 3}
+  m_Name: BirdGuy
+  m_EditorClassIdentifier: 
+  cardName: Horus
+  cardDescription: Enemies take damage equal to the amount of allies on the battlefield
+  cardEffect: 1
+  rarity: 2
+  sprite: {fileID: 864019896, guid: 9eb4340b2d6c17c478f8b7a485bf5afe, type: 3}
+  health: 12
+  damage: 6
+  cost: 6
+  attack: {fileID: -2108912441951881233, guid: 509026058b3e12a4c9e7137b71e6b5fd, type: 3}

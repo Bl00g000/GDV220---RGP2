@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e35bba7272b38544bc50c2510a7cb5e, type: 3}
+  m_Name: Scarab_1
+  m_EditorClassIdentifier: 
+  cardName: Scarab Light
+  cardDescription: Summons infront of this summon gain +1 health.
+  cardEffect: 1
+  rarity: 0
+  sprite: {fileID: -2031825145, guid: cf34924cf56dd5549860b8d780868ce9, type: 3}
+  health: 2
+  damage: 2
+  cost: 1
+  attack: {fileID: 4000726439672168020, guid: 04fb2b1abc8da9547ae21c579a8c8250, type: 3}
