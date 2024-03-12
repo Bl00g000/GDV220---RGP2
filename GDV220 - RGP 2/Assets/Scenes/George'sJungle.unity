@@ -5844,6 +5844,36 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3181710444373279297, guid: 97340919f899eac4a907646a1294fe10,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181710444600423354, guid: 97340919f899eac4a907646a1294fe10,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181710444752266479, guid: 97340919f899eac4a907646a1294fe10,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226447698511177804, guid: 97340919f899eac4a907646a1294fe10,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226447698753837495, guid: 97340919f899eac4a907646a1294fe10,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226447699200425753, guid: 97340919f899eac4a907646a1294fe10,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97340919f899eac4a907646a1294fe10, type: 3}
 --- !u!114 &1718763951 stripped
