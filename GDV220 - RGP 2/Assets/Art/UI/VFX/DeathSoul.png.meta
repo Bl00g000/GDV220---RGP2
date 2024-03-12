@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e2bbd1be3c734448876ac3c1d31fa99
+guid: 0cb6ef8655ea23f42a10a9278d6dc382
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SlashSpriteSheet(64x64)_0
+      name: DeathSoul_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 038de2c7c3aacd94fbcf9ae3577889a9
-      internalID: 1038574066
+      spriteID: e02c7e8e489419f478fcaa595d559754
+      internalID: 1602072060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlashSpriteSheet(64x64)_1
+      name: DeathSoul_1
       rect:
         serializedVersion: 2
         x: 64
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7adaeef289d16b345886d30a75d8598e
-      internalID: 61872973
+      spriteID: c80b5bd97b1cbbd468fde14cff3224a9
+      internalID: 1468596202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlashSpriteSheet(64x64)_2
+      name: DeathSoul_2
       rect:
         serializedVersion: 2
         x: 128
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d79d2a0b0688d7498147e451cd443c3
-      internalID: 2006941191
+      spriteID: f3f3bef2c6c76f34e96c3bcd61a85d0f
+      internalID: 1067694207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlashSpriteSheet(64x64)_3
+      name: DeathSoul_3
       rect:
         serializedVersion: 2
         x: 192
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9037328756ddd134081fded4a06105b5
-      internalID: -79075942
+      spriteID: 88c0d74400a6f424ebd9ec4439a52d1e
+      internalID: -2032640403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlashSpriteSheet(64x64)_4
+      name: DeathSoul_4
       rect:
         serializedVersion: 2
         x: 256
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 397a7f53cfc80df4abab36a18ba99cd9
-      internalID: 1274986249
+      spriteID: 776e1a3c3e584894fb2263d46a9b3391
+      internalID: -1630783315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlashSpriteSheet(64x64)_5
+      name: DeathSoul_5
       rect:
         serializedVersion: 2
         x: 320
@@ -224,8 +224,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44b0cc0d0aa46a24cbe27b9ea9aeb2e7
-      internalID: -1090360190
+      spriteID: 6b0fb2376b41eb94d9944277230ebf36
+      internalID: 427766339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSoul_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab69305e5d9dcf44888a32c09988bbf
+      internalID: 502481208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSoul_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942584508458b2a40a59c1093f146295
+      internalID: 1117201494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSoul_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29483c479f7cc1b428e591c0b1a062c3
+      internalID: 1439560042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSoul_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456c60d3baa71394babd712461aa47f0
+      internalID: -1135057538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSoul_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273c23857b5b6d248810059ac4b581fb
+      internalID: 492991697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSoul_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed05c9f19ab2c5f419a4b72b838dca3a
+      internalID: 1755716786
       vertices: []
       indices: 
       edges: []
@@ -233,7 +359,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 648db1585e614724e8eef307e378e446
+    spriteID: b7c861b59aa956a45a4498e4a9174ade
     internalID: 0
     vertices: []
     indices: 
@@ -241,12 +367,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SlashSpriteSheet(64x64)_0: 1038574066
-      SlashSpriteSheet(64x64)_1: 61872973
-      SlashSpriteSheet(64x64)_2: 2006941191
-      SlashSpriteSheet(64x64)_3: -79075942
-      SlashSpriteSheet(64x64)_4: 1274986249
-      SlashSpriteSheet(64x64)_5: -1090360190
+      DeathSoul_0: 1602072060
+      DeathSoul_1: 1468596202
+      DeathSoul_10: 492991697
+      DeathSoul_11: 1755716786
+      DeathSoul_2: 1067694207
+      DeathSoul_3: -2032640403
+      DeathSoul_4: -1630783315
+      DeathSoul_5: 427766339
+      DeathSoul_6: 502481208
+      DeathSoul_7: 1117201494
+      DeathSoul_8: 1439560042
+      DeathSoul_9: -1135057538
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
