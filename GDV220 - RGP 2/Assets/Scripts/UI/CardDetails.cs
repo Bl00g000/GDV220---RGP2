@@ -24,6 +24,10 @@ public class CardDetails : MonoBehaviour
 
     public List<GameObject> effectToolTips;
 
+    public bool itIsActive = false;
+
+
+
     public void Awake()
     {
         if (instance == null)
@@ -48,6 +52,7 @@ public class CardDetails : MonoBehaviour
     public void CloseScreen()
     {
         cardUI.SetActive(false);
+        itIsActive = false;
     }
 
     public void SetDetailsValues(CardData cardData)
@@ -70,5 +75,7 @@ public class CardDetails : MonoBehaviour
         }
         effectToolTips[(int)cardData.cardEffect].SetActive(true);
         if (cardData.cardEffect == CardData.Effects.None) txtEffect.text = string.Empty;
+
+        itIsActive = true;
     }
 }

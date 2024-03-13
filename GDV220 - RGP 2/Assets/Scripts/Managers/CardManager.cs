@@ -43,7 +43,7 @@ public class CardManager : MonoBehaviour
 
         iMaxHandSize = handPositions.Count;
         ShuffleDeck();
-        StartCoroutine(DrawStartingHand());
+        //StartCoroutine(DrawStartingHand());
     }
 
     private void Update()
@@ -51,6 +51,14 @@ public class CardManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             DrawCard();
+        }
+    }
+
+    public void DiscardHand()
+    {
+        while (hand.Count > 0)
+        {
+            DiscardCard(hand[0]);
         }
     }
 
