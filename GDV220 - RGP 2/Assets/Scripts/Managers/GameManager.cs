@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
     public GameObject enemyTurnSign;  
     public GameObject combatPhaseSign;
 
+    public AudioClip clipCombatStart;
+    public AudioClip clipPlayerTurnStart;
+    public AudioClip clipEnemyTurnStart;
+    AudioSource audioSource;
+
     [HideInInspector] public bool bTurnFinished = false;
     public int iTurnCounter = 0;
 
@@ -52,6 +57,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = clipPlayerTurnStart;
+
         bIsPaused = false;
         ChangeGameState(GameState.Game_PrepPhase);
     }
@@ -169,8 +177,15 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.Game_PrepPhase:
+
                 playerTurnSign.SetActive(true);
                 bTurnFinished = false;
+                if(iTurnCounter > 0)
+                {
+                    audioSource.clip = clipPlayerTurnStart;
+                    audioSource.Play();
+                }
+                
                 iTurnCounter++;
 
                 Player.instance.StartTurn();
@@ -179,9 +194,11 @@ public class GameManager : MonoBehaviour
 
             case GameState.Game_CombatPhase:
                 // Disable clicking / activating cards
-                    // done; if-check in card base - teddy
+                // done; if-check in card base - teddy
 
                 // Play battle
+                audioSource.clip = clipCombatStart;
+                audioSource.Play();
                 StartCoroutine(Battlefield.instance.CommenceBattle());
 
                 break;
@@ -197,6 +214,8 @@ public class GameManager : MonoBehaviour
         if (bTurnFinished) return;
         GameManager.instance.playerTurnSign.SetActive(false);
         bTurnFinished = true;
+        audioSource.clip = clipEnemyTurnStart;
+        audioSource.Play();
 
         //Say Hi to Georg ((HI GEORG!!!))
         // Call function for enemies to play their turns here

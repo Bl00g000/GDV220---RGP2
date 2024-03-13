@@ -696,6 +696,9 @@ MonoBehaviour:
   playerTurnSign: {fileID: 0}
   enemyTurnSign: {fileID: 0}
   combatPhaseSign: {fileID: 0}
+  clipCombatStart: {fileID: 8300000, guid: 76b6e1b0bd665644aa0073b6aec2e96a, type: 3}
+  clipPlayerTurnStart: {fileID: 8300000, guid: 6e640fbe79908ca4ba19fef2a490112b, type: 3}
+  clipEnemyTurnStart: {fileID: 8300000, guid: 6e640fbe79908ca4ba19fef2a490112b, type: 3}
   bTurnFinished: 0
   iTurnCounter: 0
 --- !u!1 &8969215290989761913
