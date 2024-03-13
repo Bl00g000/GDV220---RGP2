@@ -6,20 +6,26 @@ using UnityEngine.EventSystems;
 public class SummonObjOnClick : MonoBehaviour
 {
     private CardBase cardBase;
-    private Collider boxCollider;
+    private Collider2D boxCollider;
+    private bool bClicked = false;
 
     private void Start()
     {
         cardBase = transform.GetComponentInParent<CardBase>();
+        boxCollider = transform.GetComponent<Collider2D>();
     }
 
     private void Update()
     {
-        // check if right clicking on summon obj
         if (Input.GetMouseButtonDown(1))
         {
-            // Teddy was here say WATER YOU DOIN TEDDLES?!?!
-            CardDetails.instance.SetDetailsValues(cardBase.card);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
+        
+            if (hit.collider != null && hit.collider.transform == this.transform)
+            {
+                CardDetails.instance.SetDetailsValues(cardBase.card);
+            }
         }
     }
 }

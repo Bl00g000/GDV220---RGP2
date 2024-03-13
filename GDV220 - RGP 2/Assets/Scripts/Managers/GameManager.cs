@@ -62,10 +62,11 @@ public class GameManager : MonoBehaviour
         // Pause the game
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            // Stops game from pausing if card details is open
+            if (CardDetails.instance.cardUI.transform.GetChild(0).gameObject.activeSelf) return;
+
             ChangeGameState();
         }
-
-        if (bTurnFinished) return;
     }
 
 
