@@ -72,11 +72,13 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             // Stops game from pausing if card details is open
-            if (CardDetails.instance.cardUI.transform.GetChild(0).gameObject.activeSelf) return;
+            if (CardDetails.instance.itIsActive) return;
 
             ChangeGameState();
         }
     }
+
+    
 
 
     //George put this here, sorry for intruding:)
@@ -216,6 +218,8 @@ public class GameManager : MonoBehaviour
         if (bTurnFinished) return;
         GameManager.instance.playerTurnSign.SetActive(false);
         bTurnFinished = true;
+        CardManager.instance.DiscardHand();
+
         audioSource.clip = clipEnemyTurnStart;
         audioSource.Play();
 

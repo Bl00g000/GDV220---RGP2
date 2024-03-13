@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Player : MonoBehaviour
     private int iMaxSouls = 10;
     private TextMeshProUGUI healthUI;
     private TextMeshProUGUI soulsUI;
+
+    public event Action<float> OnTakeDamage;
 
     private void Awake()
     {
@@ -43,17 +46,19 @@ public class Player : MonoBehaviour
     public void StartTurn()
     {
         // Don't draw a new card on first turn
-        if (GameManager.instance.iTurnCounter == 1) return;
+        //if (GameManager.instance.iTurnCounter == 1) return;
 
         if (iSouls < iMaxSouls)
         {
             iSouls += 2;
             UpdateStatsUI();
         }
+
+        StartCoroutine(CardManager.instance.DrawStartingHand());
         
-        CardManager.instance.DrawCard();
-        CardManager.instance.DrawCard();
-    }
+        //CardManager.instance.DrawCard();
+        //CardManager.instance.DrawCard();
+    }   
 
     // Pay the cost of card and update UI
     void CardSummoned(int _iLaneIndex)
@@ -64,6 +69,8 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int _iDamage)
     {
+        OnTakeDamage?.Invoke(_iDamage);
+
         iCurrentHealth -= _iDamage;
         StartCoroutine(DamageEffect());
         if (iCurrentHealth <= 0) iCurrentHealth = 0;

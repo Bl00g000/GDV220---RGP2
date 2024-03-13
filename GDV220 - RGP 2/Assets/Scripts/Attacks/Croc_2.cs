@@ -27,12 +27,15 @@ public class Croc_2 : Attack
         {
             case effectType.ON_PLAY:
 
-                if (_ownLanes[_ownLaneIndex].summons[0] != null)
+                if (_ownLanes[_ownLaneIndex] != null)
                 {
-                    // increase targets attack by an amount of iAttackIncrease
-                    _ownLanes[_ownLaneIndex].summons[0].GetComponentInParent<CardBase>().iDamage += iAttackIncrease;
+                    if (_ownLanes[_ownLaneIndex].summons[0] != null)
+                    {
+                        // increase targets attack by an amount of iAttackIncrease
+                        _ownLanes[_ownLaneIndex].summons[0].GetComponentInParent<CardBase>().iDamage += iAttackIncrease;
+                    }
                 }
-
+                
                 break;
             case effectType.ON_HIT:
                 break;
