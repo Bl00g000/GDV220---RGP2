@@ -23,6 +23,8 @@ public class CardBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
 
     public bool bMarkedForDeath = false;
 
+    bool bIsHovered = false; 
+
     // HIDE THESE IN INSPECTOR AFTER DEBUGGING/TESTING
     public int iStartHealth;
     public int iHealth;
@@ -63,18 +65,21 @@ public class CardBase : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
         }
         if (eventData.button == PointerEventData.InputButton.Right)
         {
-            CardDetails.instance.SetDetailsValues(card);
+            if (bIsHovered)
+            {
+                CardDetails.instance.SetDetailsValues(card);
+            }
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // when hovering over card
+        bIsHovered = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        // when no longer hovering over card
+        bIsHovered = false;
     }
 
     public void SetTurnIndicator(bool _isOn)

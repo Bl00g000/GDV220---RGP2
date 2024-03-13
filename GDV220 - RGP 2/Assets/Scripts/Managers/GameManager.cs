@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject gameEndScreen;  // This is both victory and defeat
 
+    public GameObject endTurnButton;
     public GameObject playerTurnSign; 
     public GameObject enemyTurnSign;  
     public GameObject combatPhaseSign;
@@ -178,6 +179,7 @@ public class GameManager : MonoBehaviour
 
             case GameState.Game_PrepPhase:
 
+                endTurnButton.SetActive(true);
                 playerTurnSign.SetActive(true);
                 bTurnFinished = false;
                 if(iTurnCounter > 0)
@@ -216,6 +218,8 @@ public class GameManager : MonoBehaviour
         bTurnFinished = true;
         audioSource.clip = clipEnemyTurnStart;
         audioSource.Play();
+
+        endTurnButton.SetActive(false);
 
         //Say Hi to Georg ((HI GEORG!!!))
         // Call function for enemies to play their turns here
