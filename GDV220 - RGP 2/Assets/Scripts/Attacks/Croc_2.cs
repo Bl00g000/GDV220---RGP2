@@ -21,7 +21,7 @@ public class Croc_2 : Attack
 
     public override void ActivateEffect(int iLanePosIndex, int _ownLaneIndex, List<Lane> _ownLanes, List<Lane> _targetLanes, effectType _effectType)
     {
-        int iAttackIncrease = 1;
+        int iAttackIncrease = 2;
 
         switch (_effectType)
         {
