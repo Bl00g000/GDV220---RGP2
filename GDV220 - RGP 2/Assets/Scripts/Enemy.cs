@@ -18,8 +18,8 @@ public class Enemy : MonoBehaviour
     public int iCurrentHealth = 0;
     public int iCurrentSouls = 0;
 
-    protected float fBaseSummonChance = 0.4f;
-    protected float fSoulSavedScalar = 0.15f;
+    public float fBaseSummonChance = 0.45f;
+    public float fSoulSavedScalar = 0.15f;
 
     public List<CardData> enemyDeck = new List<CardData>();
     public List<int> playableCardPositions = new List<int>();

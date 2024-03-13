@@ -16,7 +16,7 @@ public class Battlefield : MonoBehaviour
     //public Enemy enemies[0] = null;
     //public Enemy enemies[1] = null;
     //public Enemy enemies[2] = null;
-    
+
     // these gotta be lists for now sorry (say hi bloo)
     public List<Enemy> enemies = new List<Enemy>();
 
@@ -68,7 +68,7 @@ public class Battlefield : MonoBehaviour
     {
         // Teddy was hereeeeee
         // Initialize empty list with count
-        for (int i = 0; i < 6; i ++)
+        for (int i = 0; i < 6; i++)
         {
             allLanes.Add(null);
         }
@@ -102,7 +102,7 @@ public class Battlefield : MonoBehaviour
 
     public IEnumerator CommenceBattle()
     {
-        if (allLanes[0].bActiveLane)
+        if (allLanes[0].bActiveLane && (allLanes[0].LineHasSummons() || allLanes[3].LineHasSummons()))
         {
             bLaneCombatPlaying = true;
             GameManager.instance.combatPhaseSign.SetActive(true);
@@ -110,14 +110,14 @@ public class Battlefield : MonoBehaviour
             yield return new WaitUntil(() => !bLaneCombatPlaying);
         }
 
-        if (allLanes[1].bActiveLane)
+        if (allLanes[1].bActiveLane && (allLanes[1].LineHasSummons() || allLanes[4].LineHasSummons()))
         {
             bLaneCombatPlaying = true;
             StartCoroutine(instance.ResolveBattles(1));
             yield return new WaitUntil(() => !bLaneCombatPlaying);
         }
 
-        if (allLanes[2].bActiveLane)
+        if (allLanes[2].bActiveLane && (allLanes[2].LineHasSummons() || allLanes[5].LineHasSummons()))
         {
             bLaneCombatPlaying = true;
             StartCoroutine(instance.ResolveBattles(2));
@@ -315,5 +315,11 @@ public class Battlefield : MonoBehaviour
         bEnemyTurnsPlaying = false;
         GameManager.instance.enemyTurnSign.SetActive(false);
         GameManager.instance.ChangeGameState(GameState.Game_CombatPhase);
+    }
+
+    IEnumerator DespawnSummon()
+    {
+        float timeCounter = 0.0f;
+        yield return new WaitForSeconds(1.0f);
     }
 }
