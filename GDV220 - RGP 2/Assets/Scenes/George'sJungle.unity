@@ -6244,9 +6244,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
+      propertyPath: enemyDeck.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
+        type: 3}
       propertyPath: enemyDeck.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: a9dd2883952ae1344906fcd0a3b0794c,
+        type: 2}
     - target: {fileID: 4446081064388592584, guid: 1b51049cc50711a4089312a6f9442e49,
         type: 3}
       propertyPath: enemyDeck.Array.data[1]

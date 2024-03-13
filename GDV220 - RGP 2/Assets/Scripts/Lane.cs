@@ -90,7 +90,7 @@ public class Lane : MonoBehaviour
     // Triggered when lane is chosen to summon card in
     public void LanePicked()
     {
-        if(bActiveLane)
+        if(bActiveLane && !CardDetails.instance.itIsActive)
         {
             if (CardManager.instance.cardToSummon != null)
             {

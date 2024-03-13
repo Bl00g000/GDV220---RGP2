@@ -78,4 +78,6 @@ public class CardDetails : MonoBehaviour
 
         itIsActive = true;
     }
+
+    
 }
