@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5244160154734394794}
   - component: {fileID: 5244160154734394795}
-  - component: {fileID: 7934697073216039309}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -26,8 +25,6 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5244160154734394792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.53, y: 0.63, z: -2.22}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,7 +45,6 @@ MonoBehaviour:
   iHealth: 20
   iCurrentHealth: 0
   iSouls: 5
---- !u!212 &7934697073216039309
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
